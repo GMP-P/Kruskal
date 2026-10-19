@@ -134,7 +134,6 @@ int main(int argc, char* argv[]){
     Aresta* arvore = new Aresta[V];
     int qtdArvore = kruskal(arestas, V, E, arvore, mostrarPassos);
     auto t3 = chrono::steady_clock::now();
--
     long long pesoTotal = 0;
     for (int i = 0; i < qtdArvore; i++) pesoTotal += arvore[i].peso;
 
